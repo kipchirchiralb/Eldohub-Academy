@@ -7692,7 +7692,7 @@ width: auto !important;
     font-size: 14px;
 }
 .quote-post{
-	background: url(../images/quote_bg.png);
+	background: url("../images/quote_bg.png");
 }
 .widget_media_image a:hover {
     padding-left: 0 !important;
@@ -13209,7 +13209,7 @@ color: #fff;
       /* Just add the image as background attribute and add some animation */
       
       .wrapper-one {
-          background-image: url("/img/hero2\ \(1\).png");
+          background-image: url("../img/hero2\ \(1\).png");
           ;
       }
       @media (max-width: 768px) {
@@ -13220,12 +13220,12 @@ color: #fff;
     }
       
       .wrapper-two {
-          background-image: url("/img/class-img\ \(2\).JPG");
+          background-image: url("../img/class-img\ \(2\).JPG");
         animation: slideTwoAnim 20s infinite;
       }
       
       .wrapper-three {
-          background-image: url("/img/hero2.png");
+          background-image: url("../img/hero2.png");
         animation: slideThreeAnim 20s infinite;
       }
       
