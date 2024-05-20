@@ -236,11 +236,7 @@
                     class="navbar-brand logo-black"
                     id="logo"
                   >
-                    <img
-                      src="./img/image copy 3.png"
-                      alt="Eldohub"
-                      width="100px"
-                    />
+                    <img src="./img/image copy 3.png" alt="Eldohub" />
                   </a>
                 </div>
               </div>
@@ -683,11 +679,11 @@
       </div>
     </div>
     <div class="container" id="testimonials">
+      <h2 style="text-align: center" class="h2">Testimonials</h2>
       <div id="demo" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <div class="carousel-caption">
-              <h1>Testimonials</h1>
               <img src="./img/emmanuel.jpg" class="img-fluid" /><br />
               <p>
                 "Thanks to the full-stack web programming classes, I was able to
@@ -701,7 +697,7 @@
               <div id="image-caption">Cohort 1 - 2023</div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item active">
             <div class="carousel-caption">
               <img src="./img/njoroge.png" class="img-fluid" />
               <p>
@@ -716,12 +712,30 @@
             </div>
           </div>
         </div>
-        <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                  <i id="i" class='fas fa-arrow-left'></i>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                  <i id="i" class='fas fa-arrow-right'></i>
-                </a> -->
+        <style>
+          .carousel-control i {
+            background-color: #0e3b2e4f;
+            padding: 1.4rem;
+            transition: all 0.3s linear;
+          }
+          .carousel-control i:active {
+            background-color: #0e3b2e;
+          }
+        </style>
+        <button
+          class="carousel-control carousel-control-prev"
+          data-slide="prev"
+          id="prev-slide-btn"
+        >
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button
+          class="carousel-control carousel-control-next"
+          data-slide="next"
+          id="next-slide-btn"
+        >
+          <i class="fas fa-arrow-right"></i>
+        </button>
       </div>
     </div>
     <!-- footer -->
@@ -847,6 +861,7 @@
       </div>
     </footer>
     <!-- footer-end -->
+    <script src="./index.js"></script>
     <script
       type="text/javascript"
       src="./js/index6dcf.js?ver=5.9.2"
@@ -953,7 +968,7 @@
       src="./js/forms433d.js?ver=4.9.11"
       id="mc4wp-forms-api-js"
     ></script>
-    <script
+    <!-- <script
       type="text/javascript"
       src="./js/webpack.runtime.min78fb.js?ver=3.20.1"
       id="elementor-webpack-runtime-js"
@@ -968,6 +983,6 @@
       type="text/javascript"
       src="/js/jquery/ui/core.min3f14.js?ver=1.13.2"
       id="jquery-ui-core-js"
-    ></script>
+    ></script> -->
   </body>
 </html>
