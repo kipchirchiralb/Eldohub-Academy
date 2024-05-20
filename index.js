@@ -38,9 +38,10 @@ const nextBtn = document.querySelector("#next-slide-btn");
 const prevBtn = document.querySelector("#prev-slide-btn");
 const allSlides = document.querySelectorAll(".carousel-item");
 
-let currentSlide = 0;
+let currentSlide = -1;
 
 function goToSlide(index) {
+  console.log(index);
   allSlides.forEach((slide) => {
     slide.classList.remove("active");
   });
@@ -56,4 +57,9 @@ prevBtn.addEventListener("click", () => {
 
 nextBtn.addEventListener("click", () => {
   goToSlide((currentSlide + 1) % allSlides.length);
+});
+
+document.addEventListener("scroll", () => {
+  //   document.querySelector("#menu-main-menu").style.backgroundColor = "green";
+  console.log("scrolling!!!");
 });
